@@ -26,7 +26,10 @@
         "badge": {
             "prototype": "digit/ui/badge.reel",
             "properties": {
-                "element": {"#": "badge"}
+                "element": {"#": "badge"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             },
             "bindings": {
                 "value": {"<-": "@rangeController.organizedContent.filter{!completed}.length"}
@@ -67,10 +70,10 @@
                 ]
             }
         },
-        "task1": {
+        "task": {
             "prototype": "ui/task.reel",
             "properties": {
-                "element": {"#": "task1"},
+                "element": {"#": "task"},
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true"
@@ -98,7 +101,7 @@
         <button data-montage-id="button"></button>
         <output data-montage-id="badge"></output>
         <ul data-montage-id="list">
-            <div data-montage-id="task1"></div>
+            <div data-montage-id="task"></div>
         </ul>
     </div>
 </body>
