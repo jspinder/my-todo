@@ -58,6 +58,15 @@
                 ]
             }
         },
+        "task1": {
+            "prototype": "ui/task.reel",
+            "properties": {
+                "element": {"#": "task1"}
+            },
+            "bindings": {
+                "task": {"<-": "@list:iteration.object"}
+            }
+        },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
@@ -76,7 +85,7 @@
         <h1 data-montage-id="title"></h1>
         <button data-montage-id="button"></button>
         <ul data-montage-id="list">
-
+            <div data-montage-id="task1"></div>
         </ul>
     </div>
 </body>
