@@ -26,11 +26,7 @@
         "badge": {
             "prototype": "digit/ui/badge.reel",
             "properties": {
-                "element": {"#": "badge"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "value": ""
+                "element": {"#": "badge"}
             },
             "bindings": {
                 "value": {"<-": "@rangeController.organizedContent.filter{!completed}.length"}
@@ -74,7 +70,10 @@
         "task1": {
             "prototype": "ui/task.reel",
             "properties": {
-                "element": {"#": "task1"}
+                "element": {"#": "task1"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             },
             "bindings": {
                 "task": {"<-": "@list:iteration.object"}
