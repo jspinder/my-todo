@@ -1,4 +1,14 @@
+.Main {
+    padding: 1em;
+    text-align: center;
+}
 
+.Task {
+    padding: .5em;
+    text-align: center;
+}
+    
+    
 /* 
  * This file is reserved for your global style rules. 
  */
